@@ -1,0 +1,155 @@
+.tablist,
+.social-links {
+  display: none;
+}
+
+.about-me-title {
+  margin-bottom: 25px;
+}
+
+.about-me-title,
+.experience,
+.education {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 26px;
+  color: var(--heading-color);
+  margin-top: 30px;
+}
+
+.about-description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+
+.entry-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.organization,
+.location,
+.date {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--muted-color);
+}
+
+.type {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 4px;
+  width: 70px;
+  text-align: center;
+  background-color: #d7ffe0;
+  color: #007a0b;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.details-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-left {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 0;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .organization,
+  .location,
+  .date {
+    filter: invert(1);
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    margin: 10px auto 0;
+    padding-right: 500px;
+  }
+
+  .tablist,
+  .social-links {
+    display: flex;
+  }
+
+  .about-me-title,
+  .experience,
+  .education {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .about-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .entry-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .organization,
+  .location,
+  .date {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 28px;
+  }
+
+  .type {
+    font-weight: 600;
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+  }
+
+  article {
+    min-height: 75px;
+    padding: 15px 0 0;
+  }
+
+  .entry-header {
+    margin-bottom: 4px;
+  }
+
+  .details-left {
+    display: grid;
+    grid-template-columns: 300px 100px;
+    gap: 20px;
+  }
+}
