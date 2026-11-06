@@ -1,0 +1,48 @@
+{
+  "experience": [
+    {
+      "title": "Airport Ground Staff",
+      "status": "Part Time",
+      "organization": "SAS",
+      "location": "Stockholm, Sweden",
+      "dates": "2024 - Present"
+    },
+    {
+      "title": "Work Title Here",
+      "status": "Full Time",
+      "organization": "Company Name Here",
+      "location": "Stockholm, Sweden",
+      "dates": "2024 - Present"
+    },
+    {
+      "title": "Work Title Here",
+      "status": "Full Time",
+      "organization": "Company Name Here",
+      "location": "Stockholm, Sweden",
+      "dates": "2024 - Present"
+    }
+  ],
+  "education": [
+    {
+      "title": "Fullstack Developer",
+      "status": "Full Time",
+      "organization": "Chas Academy",
+      "location": "Stockholm, Sweden",
+      "dates": "2026 - 2028"
+    },
+    {
+      "title": "Education Title Here",
+      "status": "Full Time",
+      "organization": "School Name Here",
+      "location": "Stockholm, Sweden",
+      "dates": "2026 - 2028"
+    },
+    {
+      "title": "Education Title Here",
+      "status": "Full Time",
+      "organization": "School Name Here",
+      "location": "Stockholm, Sweden",
+      "dates": "2026 - 2028"
+    }
+  ]
+}
