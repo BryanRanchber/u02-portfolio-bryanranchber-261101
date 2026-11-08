@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/about.css" />
     <script src="../js/main.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+    <script src="../js/menu.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,9 +32,28 @@
             <span class="logo-name">Ranchber</span>
           </a>
 
-          <button class="menu-button">
-            <img class="menu-icon" src="../images/icons/list.svg" alt="Menu" />
-          </button>
+          <div class="header-actions">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Switch to dark mode"
+            >
+              <img
+                class="theme-icon"
+                src="../images/icons/lightbulb.svg"
+                alt=""
+              />
+            </button>
+
+            <button
+              class="menu-button"
+              type="button"
+              aria-label="Open navigation"
+              aria-expanded="false"
+            >
+              <img class="menu-icon" src="../images/icons/list.svg" alt="" />
+            </button>
+          </div>
         </div>
 
         <ul class="tablist">
