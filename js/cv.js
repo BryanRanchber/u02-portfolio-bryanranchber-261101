@@ -1,11 +1,22 @@
 async function loadCV() {
-  const response = await fetch("../data/cv.json");
-  const data = await response.json();
   const experienceList = document.getElementById("experience-list");
   const educationList = document.getElementById("education-list");
 
-  renderCV(data.experience, experienceList);
-  renderCV(data.education, educationList);
+  try {
+    const response = await fetch("../data/cv.json");
+
+    if (!response.ok) {
+      throw new Error("Unable to load CV data");
+    }
+
+    const data = await response.json();
+
+    renderCV(data.experience, experienceList);
+    renderCV(data.education, educationList);
+  } catch (error) {
+    experienceList.textContent = "Unable to load CV information.";
+    educationList.textContent = "Unable to load education information.";
+  }
 }
 
 loadCV();

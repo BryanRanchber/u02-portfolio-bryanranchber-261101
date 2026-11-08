@@ -11,15 +11,15 @@
       "title": "Work Title Here",
       "status": "Full Time",
       "organization": "Company Name Here",
-      "location": "Stockholm, Sweden",
-      "dates": "2024 - Present"
+      "location": "Location Here",
+      "dates": "Start Date - End Date"
     },
     {
       "title": "Work Title Here",
       "status": "Full Time",
       "organization": "Company Name Here",
-      "location": "Stockholm, Sweden",
-      "dates": "2024 - Present"
+      "location": "Location Here",
+      "dates": "Start Date - End Date"
     }
   ],
   "education": [
@@ -34,15 +34,15 @@
       "title": "Education Title Here",
       "status": "Full Time",
       "organization": "School Name Here",
-      "location": "Stockholm, Sweden",
-      "dates": "2026 - 2028"
+      "location": "Location Here",
+      "dates": "Start Date - End Date"
     },
     {
       "title": "Education Title Here",
       "status": "Full Time",
       "organization": "School Name Here",
-      "location": "Stockholm, Sweden",
-      "dates": "2026 - 2028"
+      "location": "Location Here",
+      "dates": "Start Date - End Date"
     }
   ]
 }
