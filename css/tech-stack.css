@@ -34,6 +34,17 @@
   margin: 0 0 10px;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .tech-stack li p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .tech-stack li:hover p {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 1024px) {
   main {
     width: 1199px;
