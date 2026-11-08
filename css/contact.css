@@ -1,7 +1,4 @@
-.tablist,
-.social-links {
-  display: none;
-}
+
 
 .contact-section h1 {
   font-family: "DM Sans", sans-serif;
@@ -20,7 +17,7 @@
   font-size: 24px;
   line-height: 40px;
   margin: 0;
-  background: linear-gradient(to right, #00c0fd, #e70faa);
+  background: linear-gradient(to right, var(--gradient-blue), var(--gradient-pink));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -40,10 +37,7 @@
 }
 
 @media (min-width: 1024px) {
-  .tablist,
-  .social-links {
-    display: flex;
-  }
+
 
   main {
     width: 1199px;

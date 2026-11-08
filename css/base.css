@@ -157,7 +157,7 @@ nav {
   height: 30px;
 }
 
-.tablist.menu-open, 
+.tablist.menu-open,
 .social-links.menu-open {
   display: flex;
 }
@@ -198,21 +198,17 @@ footer {
 
 .dark-mode .social-links img,
 .dark-mode .menu-icon,
-.dark-mode .project-links img {
+.dark-mode .project-links img,
+.dark-mode .theme-icon,
+.dark-mode .organization img,
+.dark-mode .location img,
+.dark-mode .date img {
   filter: invert(1);
-}
-
-.dark-mode .theme-icon {
-  filter: invert(1);
-}
-
-.dark-mode .theme-toggle {
-  border-color: var(--text-color);
 }
 
 @media (min-width: 1024px) {
   nav {
-    width: 1199px;
+    width: min(1199px, 100%);
     margin: 20px auto 0;
     flex-direction: row;
     align-items: center;

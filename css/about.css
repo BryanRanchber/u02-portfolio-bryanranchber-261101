@@ -1,8 +1,3 @@
-.tablist,
-.social-links {
-  display: none;
-}
-
 .about-me-title {
   margin-bottom: 25px;
 }
@@ -42,7 +37,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 14px;
-  color: var(--muted-color);
+  color: var(--secondary-color);
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -86,24 +81,11 @@ footer {
   margin-top: 100px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .organization,
-  .location,
-  .date {
-    filter: invert(1);
-  }
-}
-
 @media (min-width: 1024px) {
   main {
     max-width: 1200px;
     margin: 10px auto 0;
     padding-right: 500px;
-  }
-
-  .tablist,
-  .social-links {
-    display: flex;
   }
 
   .about-me-title,
