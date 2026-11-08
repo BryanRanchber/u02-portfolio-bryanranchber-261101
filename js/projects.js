@@ -3,7 +3,9 @@ async function loadProjects() {
   projectsList.textContent = "Loading projects...";
 
   try {
-    const response = await fetch("https://api.github.com/users/BryanRanchber/repos");
+    const response = await fetch(
+      "https://api.github.com/users/BryanRanchber/repos",
+    );
 
     if (!response.ok) {
       projectsList.textContent =
@@ -12,7 +14,7 @@ async function loadProjects() {
     }
     const data = await response.json();
     const groupResponse = await fetch(
-      "https://api.github.com/repos/yoneshussain/u03-quiz-app"
+      "https://api.github.com/repos/yoneshussain/u03-quiz-app",
     );
 
     if (groupResponse.ok) {
@@ -27,6 +29,12 @@ async function loadProjects() {
 
     projectsList.textContent = "";
 
+    const projectImages = {
+      "u01-porfolio-bryanranchber-260929": "../images/project-img/project-1.png",
+      "u02-portfolio-bryanranchber-261101": "../images/project-img/project-2.png",
+      "u03-quiz-app": "../images/project-img/project-3.png",
+    };
+
     for (const repo of data) {
       const article = document.createElement("article");
       const title = document.createElement("h2");
@@ -36,6 +44,7 @@ async function loadProjects() {
       const githubLink = document.createElement("a");
       const githubIcon = document.createElement("img");
       const techStack = document.createElement("p");
+      const projectImage = document.createElement("img");
 
       let languageNames = ["Not available"];
       try {
@@ -61,6 +70,9 @@ async function loadProjects() {
         liveLink.prepend(liveIcon);
       }
 
+      projectImage.src = projectImages[repo.name] || "../images/project-img/project-4.png";
+      projectImage.alt = `Preview of ${repo.name}`;
+
       title.textContent = repo.name;
       description.textContent = repo.description || "No description available.";
       githubLink.textContent = "View Code";
@@ -76,7 +88,7 @@ async function loadProjects() {
       projectLinks.classList.add("project-links");
       techStack.classList.add("project-tech");
 
-      article.append(cardDetails);
+      article.append(projectImage, cardDetails);
       cardDetails.append(title, description, techStack, projectLinks);
       projectLinks.append(githubLink);
 
