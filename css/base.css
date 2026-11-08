@@ -125,7 +125,7 @@ nav {
 }
 
 .tablist {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 5px;
@@ -142,7 +142,7 @@ nav {
 }
 
 .social-links {
-  display: flex;
+  display: none;
   justify-content: center;
   gap: 100px;
   margin-top: 20px;
@@ -155,6 +155,11 @@ nav {
 .social-links img {
   width: 25px;
   height: 30px;
+}
+
+.tablist.menu-open, 
+.social-links.menu-open {
+  display: flex;
 }
 
 footer {
@@ -237,6 +242,7 @@ footer {
   }
 
   .tablist {
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 75px;
@@ -248,6 +254,7 @@ footer {
   }
 
   .social-links {
+    display: flex;
     gap: 30px;
     margin-left: 60px;
     margin-top: 0;
