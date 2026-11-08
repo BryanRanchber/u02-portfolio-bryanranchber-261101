@@ -45,9 +45,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   main {
-    width: 1199px;
+    width: min(1199px, 100%);
     margin: 10px auto 0;
     padding: 0;
   }

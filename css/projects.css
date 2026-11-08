@@ -78,7 +78,7 @@
   height: 12px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   main {
     width: 1199px;
     margin: 10px auto 0;
@@ -97,7 +97,7 @@
   }
 
   .project-grid {
-    grid-template-columns: repeat(3, 373px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 40px;
     row-gap: 50px;
     margin-top: 100px;

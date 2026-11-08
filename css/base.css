@@ -208,7 +208,7 @@ footer {
   filter: invert(1);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   nav {
     width: min(1199px, 100%);
     margin: 20px auto 0;
