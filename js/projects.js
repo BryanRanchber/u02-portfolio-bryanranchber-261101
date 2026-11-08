@@ -13,13 +13,18 @@ async function loadProjects() {
       return;
     }
     const data = await response.json();
-    const groupResponse = await fetch(
-      "https://api.github.com/repos/yoneshussain/u03-quiz-app",
-    );
 
-    if (groupResponse.ok) {
-      const groupProject = await groupResponse.json();
-      data.push(groupProject);
+    try {
+      const groupResponse = await fetch(
+        "https://api.github.com/repos/yoneshussain/u03-quiz-app",
+      );
+
+      if (groupResponse.ok) {
+        const groupProject = await groupResponse.json();
+        data.push(groupProject);
+      }
+    } catch (error) {
+      console.warn("Unable to load U03 group project:", error);
     }
 
     if (data.length === 0) {
@@ -30,8 +35,10 @@ async function loadProjects() {
     projectsList.textContent = "";
 
     const projectImages = {
-      "u01-porfolio-bryanranchber-260929": "../images/project-img/project-1.png",
-      "u02-portfolio-bryanranchber-261101": "../images/project-img/project-2.png",
+      "u01-porfolio-bryanranchber-260929":
+        "../images/project-img/project-1.png",
+      "u02-portfolio-bryanranchber-261101":
+        "../images/project-img/project-2.png",
       "u03-quiz-app": "../images/project-img/project-3.png",
     };
 
@@ -70,7 +77,8 @@ async function loadProjects() {
         liveLink.prepend(liveIcon);
       }
 
-      projectImage.src = projectImages[repo.name] || "../images/project-img/project-4.png";
+      projectImage.src =
+        projectImages[repo.name] || "../images/project-img/project-4.png";
       projectImage.alt = `Preview of ${repo.name}`;
 
       title.textContent = repo.name;
