@@ -8,15 +8,15 @@ html {
   --heading-color: #42446e;
   --contact-heading-color: #1e0e62;
   --secondary-color: #666666;
-  --muted-color: #6b6b6b;
   --card-color: #ffffff;
   --border-color: #d6d6d6;
-
   --gradient-blue: #00c0fd;
   --hero-blue: #3a86ff;
   --gradient-pink: #e70faa;
   --footer-pink: #d6008f;
   --gradient-purple: #8c56d4;
+  --gradient-text-blue: #0060a8;
+  --gradient-text-pink: #a00065;
 }
 
 body {
@@ -93,8 +93,8 @@ nav {
   margin: 15px 0;
   background: linear-gradient(
     to right,
-    var(--gradient-blue),
-    var(--gradient-pink)
+    var(--gradient-text-blue),
+    var(--gradient-text-pink)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -173,8 +173,8 @@ footer {
 .footer-gradient {
   background: linear-gradient(
     to right,
-    var(--hero-blue),
-    var(--gradient-purple)
+    var(--gradient-text-blue),
+    var(--gradient-text-pink)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -190,10 +190,11 @@ footer {
   --text-color: #ffffff;
   --heading-color: #ffffff;
   --contact-heading-color: #ffffff;
-  --muted-color: #737373;
   --secondary-color: #a7a7a7;
   --card-color: #222222;
   --border-color: #737373;
+  --gradient-text-blue: #00c0fd;
+  --gradient-text-pink: #e70faa;
 }
 
 .dark-mode .social-links img,
