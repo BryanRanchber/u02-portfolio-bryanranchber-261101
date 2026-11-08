@@ -202,7 +202,8 @@ footer {
 .dark-mode .theme-icon,
 .dark-mode .organization img,
 .dark-mode .location img,
-.dark-mode .date img {
+.dark-mode .date img,
+.dark-mode .dark-mode-icon {
   filter: invert(1);
 }
 
