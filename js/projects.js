@@ -11,6 +11,14 @@ async function loadProjects() {
       return;
     }
     const data = await response.json();
+    const groupResponse = await fetch(
+      "https://api.github.com/repos/yoneshussain/u03-quiz-app"
+    );
+
+    if (groupResponse.ok) {
+      const groupProject = await groupResponse.json();
+      data.push(groupProject);
+    }
 
     if (data.length === 0) {
       projectsList.textContent = "No projects available.";
